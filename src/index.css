@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+/* 원본 바닐라 투두 느낌에 맞춘 핑크 포인트 컬러 */
+:root {
+  --color-bg: #fff8fb;
+  --color-bg-soft: #fff1f6;
+  --color-text: #1f2a44;
+  --color-subtext: #7b6f7b;
+  --color-primary: #ff6f9f;
+  --color-primary-soft: #ffe3ec;
+  --color-border: #f3d6e0;
+
+  --shadow-card: 0 8px 24px rgba(214, 116, 154, 0.08);
+  --shadow-button: 0 4px 12px rgba(214, 116, 154, 0.1);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+html {
+  /* 내용이 적어도 항상 세로 스크롤 영역을 확보해서
+     스크롤바 유무에 따라 가운데 정렬 위치가 달라지지 않도록 함 */
+  overflow-y: scroll;
+}
+
+body {
+  margin: 0;
+  font-family:
+    Inter,
+    Pretendard,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+}
